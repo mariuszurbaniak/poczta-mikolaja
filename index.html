@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poczta Mikołajowa</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin:0; background:#fbf4ec; color:#2a2320; font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif; font-size:17px; line-height:1.6; }
+  .alarm { background:#c62d2d; color:#fff7f2; padding:12px 16px; display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; }
+  .stamp { font-weight:bold; font-size:1.5rem; letter-spacing:.28em; border:3px solid #fff7f2; border-radius:6px; padding:0 12px 0 20px; transform:rotate(-2deg); }
+  .where { font-weight:bold; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; }
+  main { max-width:760px; margin:0 auto; padding:28px 16px 48px; }
+  h1 { font-size:clamp(1.8rem,6vw,2.6rem); line-height:1.15; margin:0 0 14px; }
+  h2 { font-size:1.5rem; margin:36px 0 10px; color:#1f5d4a; }
+  p { margin:0 0 14px; max-width:65ch; }
+  .lead { font-size:1.2rem; font-weight:bold; }
+  .dateline { color:#6d625b; font-size:.9rem; font-weight:bold; }
+  .langs { display:flex; gap:14px; flex-wrap:wrap; margin-top:16px; }
+  .lang { flex:1 1 190px; background:#fffdf9; border:2px solid #e6d9cb; border-radius:14px; padding:16px; min-width:0; }
+  .lang.best { border-color:#f0b429; background:#fdf1cf; }
+  .lang h3 { margin:0 0 2px; font-size:1.3rem; }
+  .tag { display:inline-block; font-size:.75rem; font-weight:bold; letter-spacing:.06em; text-transform:uppercase; background:#f0b429; border-radius:999px; padding:1px 10px; margin-bottom:8px; }
+  .about { color:#6d625b; font-size:.92rem; margin:0 0 10px; }
+  .say { margin:0 0 8px; }
+  .say b { display:block; font-size:1.15rem; }
+  .words { background:#fffdf9; border:2px solid #e6d9cb; border-radius:14px; padding:6px 16px; margin:12px 0 0; }
+  .words div { display:flex; gap:4px 16px; flex-wrap:wrap; padding:10px 0; border-bottom:1px dashed #e6d9cb; }
+  .words div:last-child { border-bottom:0; }
+  .words dt { flex:1 1 200px; font-weight:bold; color:#1f5d4a; }
+  .words dd { flex:1 1 200px; margin:0; }
+  .notice { background:#fdf1cf; border:2px solid #f0b429; border-radius:14px; padding:14px 16px; margin-top:28px; }
+  .notice p:last-child { margin:0; }
+  ol { padding-left:1.3em; }
+  li { margin:8px 0; }
+  .envelope { margin-top:16px; background:#fffdf9; border:2px solid #e6d9cb; border-radius:6px; padding:16px 20px; font-size:1.2rem; line-height:1.4; max-width:360px; }
+  .envelope small { display:block; font-size:.8rem; color:#6d625b; font-weight:bold; letter-spacing:.06em; text-transform:uppercase; margin-bottom:4px; }
+  footer { margin-top:44px; padding-top:16px; border-top:1px solid #e6d9cb; color:#6d625b; font-size:.9rem; }
+</style>
+</head>
+<body>
+<div class="alarm">
+  <span class="stamp">PILNE</span>
+  <span class="where">Korvatunturi, Laponia</span>
+</div>
+
+<main>
+  <p class="dateline">Poczta Świętego Mikołaja &middot; komunikat dla dzieci</p>
+  <h1>Awaria w pracowni Mikołaja! Translator listów przestał działać</h1>
+  <p class="lead">Elfy naprawiają maszynę dzień i noc, ale potrwa to do Gwiazdki. Do tego czasu Mikołaj czyta listy tylko w trzech językach.</p>
+
+  <p>Jak poinformowało biuro prasowe Mikołaja, w ostatnich dniach doszło do poważnej usterki. Magiczna maszyna, która tłumaczyła listy dzieci z całego świata na język reniferów i elfów, zaczęła mieszać słowa. Zamiast &bdquo;lalki&rdquo; Mikołaj odczytał &bdquo;ławka&rdquo;, a prośba o rowerek omal nie skończyła się dostawą kalafiora.</p>
+  <p>Główny elf pocztowy ogłosił stan alarmowy. Mikołaj nie może ryzykować, że w Wigilię zabraknie prezentów albo trafią do niewłaściwych dzieci.</p>
+
+  <h2>W jakich językach Mikołaj przeczyta list?</h2>
+  <p>Do czasu naprawy translatora Mikołaj czyta bez pomocy maszyny listy napisane po fińsku, angielsku i chińsku.</p>
+
+  <div class="langs">
+    <section class="lang">
+      <h3>Fiński</h3>
+      <p class="about">Język Laponii, ojczyzny Mikołaja.</p>
+      <p class="say"><b>Rakas Joulupukki</b>Drogi Mikołaju</p>
+      <p class="say"><b>Kiitos</b>Dziękuję</p>
+    </section>
+    <section class="lang best">
+      <span class="tag">Najlepszy wybór</span>
+      <h3>Angielski</h3>
+      <p class="about">Najlepiej znany elfom pocztowym.</p>
+      <p class="say"><b>Dear Santa</b>Drogi Mikołaju</p>
+      <p class="say"><b>Thank you</b>Dziękuję</p>
+    </section>
+    <section class="lang">
+      <h3>Chiński</h3>
+      <p class="about">Język milionów dzieci na świecie.</p>
+      <p class="say"><b>亲爱的圣诞老人</b>Drogi Mikołaju</p>
+      <p class="say"><b>谢谢</b>Dziękuję</p>
+    </section>
+  </div>
+
+  <h2>Dlaczego warto napisać po angielsku?</h2>
+  <p>Angielski najłatwiej opanować w kilka dni. Słyszymy go w bajkach, grach i piosenkach, więc wiele słów już znasz. Do tego większość elfów pocztowych czyta go najszybciej, dlatego taki list ma największą szansę dotrzeć przed Wigilią.</p>
+
+  <h2>Mały słowniczek do listu</h2>
+  <dl class="words">
+    <div><dt>Dear Santa,</dt><dd>Drogi Mikołaju,</dd></div>
+    <div><dt>My name is …</dt><dd>Mam na imię …</dd></div>
+    <div><dt>I am … years old.</dt><dd>Mam … lat.</dd></div>
+    <div><dt>I have been good this year.</dt><dd>W tym roku byłem/byłam grzeczny/a.</dd></div>
+    <div><dt>I would like …</dt><dd>Chciałbym/chciałabym …</dd></div>
+    <div><dt>Thank you!</dt><dd>Dziękuję!</dd></div>
+    <div><dt>Merry Christmas!</dt><dd>Wesołych Świąt!</dd></div>
+  </dl>
+
+  <div class="notice">
+    <p><b>Uwaga!</b> Listy w innych językach też zostaną przyjęte, ale elfy będą musiały szukać tłumaczy, więc nie ma gwarancji, że odpowiedź dotrze przed świętami.</p>
+    <p>Mikołaj prosi: pisz po angielsku, a jeśli chcesz, dopisz kilka słów po fińsku lub chińsku.</p>
+  </div>
+
+  <h2>Co zrobić już dziś?</h2>
+  <ol>
+    <li>Weź kartkę i kolorowe kredki.</li>
+    <li>Poproś rodziców lub starsze rodzeństwo o pomoc ze słowniczkiem.</li>
+    <li>Napisz list po angielsku. Może być krótki.</li>
+    <li>Zaadresuj kopertę tak jak poniżej.</li>
+    <li>Oddaj list dorosłym, a oni dopilnują, żeby trafił do elfów.</li>
+  </ol>
+
+  <div class="envelope">
+    <small>Adres na kopercie</small>
+    Santa Claus<br>Korvatunturi<br>Lapland
+  </div>
+
+  <footer>Redakcja Poczty Mikołajowej. Ho, ho, ho!</footer>
+</main>
+</body>
+</html>
